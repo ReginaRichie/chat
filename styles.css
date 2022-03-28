@@ -1,6 +1,7 @@
 
 .enterPage{
     width: 100%;
+    display: flex
 }
 
 .enterPageButtons{
