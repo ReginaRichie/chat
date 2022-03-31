@@ -120,10 +120,10 @@ body {
 .loginButton{
     margin-top: 20px;
     border-radius: 14px;
-    color: #e80073;
+    color: grey;
     width: 80%;
     padding: 10px 0;
-    font-size: 18pt;
+    font-size: 14pt;
     border: 2px solid #e80073;
 }
 
@@ -136,7 +136,10 @@ body {
     flex-direction: column;
 }
 
-greyText
+.greyText{
+    font-size: 15pt;
+    color: grey;
+}
 
 
 /*
