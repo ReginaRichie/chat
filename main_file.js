@@ -15,5 +15,5 @@ document.getElementById('close_app_2').onclick = () => {
 }
 
 document.getElementById('login_button').onclick = () => {
-    window.location.href += "chat_page/chat_page.html"
+    window.location.replace("chat_page/chat_page.html")
 }
