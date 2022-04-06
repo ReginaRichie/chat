@@ -14,3 +14,6 @@ document.getElementById('close_app_2').onclick = () => {
     document.getElementById("modal_registration").style.display = 'none'
 }
 
+document.getElementById('login_button').onclick = () => {
+    window.location.href += "chat_page/chat_page.html"
+}

@@ -115,6 +115,11 @@ body {
     font-size: 18pt;
 }
 
+.secondButtonsLogin:hover{
+    cursor: pointer;
+}
+
+
 .loginButton{
     margin-top: 20px;
     border-radius: 14px;
@@ -146,7 +151,7 @@ body {
     border-radius: 100px;
     background: #e80073;
     position: absolute;
-    top: 237px;
+    top: 195px;
 }
 
 .close:hover{
