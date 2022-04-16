@@ -22,10 +22,10 @@ document.getElementById('close_app_2').onclick = () => {
 function loadXMLDoc() {
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function (){
-        if (this.readyState === 4 && this.status === 200){
-            document.getElementById("login_button").innerHTML = this.responseText
-        }
-    }
+    //     if (this.readyState === 4 && this.status === 200){
+    //         document.getElementById("login_button").innerHTML = this.responseText
+    //     }
+     }
     xmlhttp.open("GET", "http://ev-gen.ru:10000", true);
     xmlhttp.send();
 
