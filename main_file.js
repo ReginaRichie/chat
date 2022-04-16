@@ -14,9 +14,9 @@ document.getElementById('close_app_2').onclick = () => {
     document.getElementById("modal_registration").style.display = 'none'
 }
 
-document.getElementById('login_button').onclick = () => {
-    window.location.replace("chat_page/chat_page.html")
-}
+//document.getElementById('login_button').onclick = () => {
+//    window.location.replace("chat_page/chat_page.html")
+//}
 
 
 function loadXMLDoc() {
@@ -33,7 +33,7 @@ function loadXMLDoc() {
         if (xmlhttp.status !== 200){
             alert( 'Ошибка: ' + xmlhttp.status);
         }else{
-            alert('Все ок' + xmlhttp.response)
+            alert('Все ок: ' + xmlhttp.response)
         }
     }
 }
