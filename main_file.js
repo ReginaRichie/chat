@@ -20,8 +20,13 @@ document.getElementById('close_app_2').onclick = () => {
 
 
 function loadXMLDoc() {
+    var login_data = {}
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function (){
+
+        login_data['login'] = document.getElementById("login")
+        login_data['password'] = document.getElementById("Password")
+
     //     if (this.readyState === 4 && this.status === 200){
     //         document.getElementById("login_button").innerHTML = this.responseText
     //     }
@@ -33,7 +38,7 @@ function loadXMLDoc() {
         if (xmlhttp.status !== 200){
             alert( 'Ошибка: ' + xmlhttp.status);
         }else{
-            alert('Все ок: ' + xmlhttp.response)
+            alert('Все ок: ' + xmlhttp.response + login_data)
         }
     }
 }
