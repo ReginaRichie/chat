@@ -24,14 +24,14 @@ function loadXMLDoc() {
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function (){
 
-        login_data['login'] = document.getElementById("login")
-        login_data['password'] = document.getElementById("Password")
+        login_data['login'] = document.getElementById("login").value
+        login_data['password'] = document.getElementById("Password").value
 
     //     if (this.readyState === 4 && this.status === 200){
     //         document.getElementById("login_button").innerHTML = this.responseText
     //     }
      }
-    xmlhttp.open("GET", "http://ev-gen.ru:10000", true);
+    xmlhttp.open("GET", "http://ev-gen.ru:3000", true);
     xmlhttp.send();
 
     xmlhttp.onload = function(){
