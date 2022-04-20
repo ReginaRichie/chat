@@ -38,7 +38,7 @@ function loadXMLDoc() {
         if (xmlhttp.status !== 200){
             alert( 'Ошибка: ' + xmlhttp.status);
         }else{
-            alert('Все ок: ' + xmlhttp.response + login_data)
+            alert('Все ок: ' + xmlhttp.response + JSON.stringify(login_data))
         }
     }
 }
