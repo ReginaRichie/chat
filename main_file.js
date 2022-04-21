@@ -20,25 +20,24 @@ document.getElementById('close_app_2').onclick = () => {
 
 
 function loadXMLDoc() {
-    var login_data = {}
+    //var login_data = {}
+    let formData = new FormData([]);
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function (){
-
+        var login_data = {}
         login_data['login'] = document.getElementById("login").value
         login_data['password'] = document.getElementById("Password").value
-
-    //     if (this.readyState === 4 && this.status === 200){
-    //         document.getElementById("login_button").innerHTML = this.responseText
-    //     }
+        formData.append(login_data)
      }
-    xmlhttp.open("GET", "http://ev-gen.ru:3000", true);
-    xmlhttp.send();
+
+    xmlhttp.open("POST", "http://ev-gen.ru:3000", true);
+    xtmlhtttp.send(formData)
 
     xmlhttp.onload = function(){
         if (xmlhttp.status !== 200){
             alert( 'Ошибка: ' + xmlhttp.status);
         }else{
-            alert('Все ок: ' + xmlhttp.response + JSON.stringify(login_data))
+            alert('Все ок: ' + xmlhttp.response + JSON.stringify(formData))
         }
     }
 }
